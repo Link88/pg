@@ -1333,3 +1333,7 @@ func appendColumnAndSliceValue(b []byte, slice reflect.Value, alias types.Q, fie
 
 	return b
 }
+
+func (q *Query) GetModel() tableModel {
+	return q.model
+}
